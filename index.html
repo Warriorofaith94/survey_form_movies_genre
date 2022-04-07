@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <style>
+
+    body{
+      font-family:sans-serif;
+      padding-left:20%;
+      padding-right:20%;
+    }
+
+    label{
+      font-size:18px;
+      display: block;
+      padding-bottom:10px;
+    }
+
+    textarea, select{
+      display:block;
+      width:100%;
+      padding:5px;
+    }
+
+   #submit{
+     display:block;
+     width:100%;
+     padding:5px;
+   }
+
+    form{
+      background-color:#F9C87C;
+      padding: 40px;
+    }
+
+    #button-area{
+      float:left;
+      width:50%;
+      height:50%;
+    }
+
+    #name{
+    display:block;
+    width:100%;
+    padding:5px;
+    }
+
+    #email{
+    display:block;
+    width:100%;
+    padding:5px;
+    }
+
+    #number{
+    display:block;
+    width:100%;
+    padding:5px;
+    }
+
+    </style>
+  </head>
+<body>
+<h1 id="title">What's your favorite genre movie? </h1>
+<p id="description">This survey tells us popular genre this year</p>
+
+
+<form id="survey-form">
+  <label id="name-label">Name:</label>
+  <input type="text" name="name" id="name" required placeholder="First Name"> <br>
+  <br>
+  <label id="email-label">Email:</label>
+  <input type="email" name="email" id="email" required placeholder="Best Email"> <br>
+  <br>
+  <label id="number-label">Number:</label>
+  <input type="number" name="number" id="number" min="0" max="10" required placeholder="People"> <br>
+  <br>
+  <label id="genre-label">Genre:</label>
+  <select id="dropdown" name="movies">
+    <option value="action">Action</option>
+    <option value="western">Western</option>
+    <option value="romance">Romance </option>
+    <option value="thriller">Thriller</option>
+  </select>
+    <br>
+    <label id="addional-comments-label">Additional Comments:</label>
+  <textarea placeholder="Additional Comments"> </textarea><br>
+
+  <div id="button-area">
+    <label id="gender-label">Gender:</label>
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female
+  </div>
+
+  <div id="button-area">
+    <label id="Loction-type-label">Location:</label>
+    <input type="checkbox" name="television" value="television">Television
+    <input type="checkbox" name="movie theater" value="movie theater">Movie Theater
+    <input type="checkbox" name="phone" value="phone">Phone<br><br>
+  </div>
+  <input type="submit" id="submit">
+</form>
+
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+      </script>
+
+ </body>
+</html>
